@@ -19,15 +19,15 @@ KEYWORD=****
 ## Install
 
 ```sh
-poetry install
+poetry install --no-root
 ```
 install on ubuntu
 
 ```sh
 sudo apt install pipx -y
 pipx ensurepath
-pipx install poetry==1.2.0
-poetry install
+pipx install poetry==1.8.3
+poetry install --no-root
 ```
 
 
