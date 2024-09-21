@@ -21,6 +21,15 @@ KEYWORD=****
 ```sh
 poetry install
 ```
+install on ubuntu
+
+```sh
+sudo apt install pipx -y
+pipx ensurepath
+pipx install poetry==1.2.0
+poetry install
+```
+
 
 ## Run
 
