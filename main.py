@@ -22,7 +22,7 @@ bot = telebot.TeleBot(BOT_TOKEN, parse_mode=None)
 
 @client.on(events.NewMessage(chats=[int(TRACK_CHAT_ID)]))
 async def handler(event):
-    if any(keyword in event.message.message for keyword in KEYWORD.split(',')):
+    if any(keyword in event.message.message.lower() for keyword in KEYWORD.split(',')):
       bot.send_message(SEND_CHAT_ID, event.message.message)
 
 client.run_until_disconnected()
