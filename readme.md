@@ -37,6 +37,9 @@ poetry install --no-root
 poetry run python main.py
 ```
 
+```sh
+pm2 start 'cd ~/apps/tele-track && poetry run python main.py' --name tt
+```
 
 ## Related docs
 
